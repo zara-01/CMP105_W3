@@ -6,7 +6,7 @@
 #include <iostream>
 
 
-class Level{
+class Level {
 public:
 	Level(sf::RenderWindow* hwnd, Input* in);
 	~Level();
@@ -22,5 +22,16 @@ private:
 
 	// Default variables for level class.
 	sf::RenderWindow* window;
+	sf::CircleShape circle;
+	sf::RectangleShape rect;
+
+	float speed;
+
+	float x_speed;
+	float y_speed;
+
+	float x_rectSpeed;
+	float y_rectSpeed;
+
 	Input* input;
 };
